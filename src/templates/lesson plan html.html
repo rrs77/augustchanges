@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lower Kindergarten Music Lesson 1</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        @media print {
+            body {
+                background: white !important;
+                -webkit-print-color-adjust: exact;
+                color-adjust: exact;
+            }
+            .container {
+                box-shadow: none !important;
+                margin: 0 !important;
+                padding: 0 !important;
+            }
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #f9fafb;
+            color: #374151;
+            line-height: 1.5;
+            font-size: 14px;
+        }
+        
+        .container {
+            max-width: 210mm;
+            min-height: 297mm; /* A4 height */
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+        }
+        
+        .header {
+            background: white;
+            color: #000000;
+            padding: 32px 24px 16px;
+            text-align: center;
+            border-bottom: 2px solid #e5e7eb;
+            position: relative;
+        }
+        
+        .header h1 {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #000000;
+            letter-spacing: -0.01em;
+        }
+        
+        .print-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: #6b7280;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+        }
+        
+        .print-button:hover {
+            background: #4b5563;
+        }
+        
+        @media print {
+            .print-button {
+                display: none;
+            }
+        }
+        
+        .duration {
+            font-size: 0.9rem;
+            color: #000000;
+            font-weight: 500;
+        }
+        
+        .content {
+            padding: 20px;
+        }
+        
+        .goals {
+            background: #f9fafb;
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 20px;
+            border-left: 4px solid #9ca3af;
+        }
+        
+        .goals h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #000000;
+        }
+        
+        .goals-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+        }
+        
+        .goals p {
+            font-size: 0.9rem;
+            color: #000000;
+            margin: 0;
+        }
+        
+        .section {
+            margin-bottom: 24px;
+        }
+        
+        .section-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #000000;
+            margin-bottom: 12px;
+            padding-bottom: 4px;
+            border-bottom: 2px solid #e5e7eb;
+        }
+        
+        .activity {
+            background: white;
+            border-radius: 12px;
+            margin-bottom: 12px;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+            border: 1px solid #e5e7eb;
+            overflow: hidden;
+        }
+        
+        .activity-header {
+            background: #f3f4f6;
+            color: #000000;
+            padding: 12px 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        .activity-name {
+            font-weight: 600;
+            font-size: 1rem;
+            color: #000000;
+        }
+        
+        .time-badge {
+            background: #d1d5db;
+            color: #000000;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .activity-content {
+            padding: 16px;
+        }
+        
+        .song-lyrics {
+            background: #f9fafb;
+            border-left: 3px solid #9ca3af;
+            padding: 12px;
+            border-radius: 6px;
+            font-style: italic;
+            margin: 8px 0;
+            font-size: 0.85rem;
+            line-height: 1.6;
+            color: #000000;
+        }
+        
+        .instructions {
+            background: #f9fafb;
+            border-radius: 8px;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #e5e7eb;
+        }
+        
+        .instructions h4 {
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 6px;
+            color: #000000;
+        }
+        
+        .instructions ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .instructions li {
+            position: relative;
+            padding-left: 16px;
+            margin-bottom: 4px;
+            font-size: 0.8rem;
+            line-height: 1.4;
+            color: #000000;
+        }
+        
+        .instructions li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: #9ca3af;
+            font-weight: bold;
+        }
+        
+        .resources {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid #f3f4f6;
+        }
+        
+        .resource {
+            background: #6b7280;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 0.7rem;
+            font-weight: 500;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.2s;
+        }
+        
+        .resource:hover {
+            background: #4b5563;
+            color: white;
+        }
+        
+        .welcome .activity-header { 
+            background: #f3f4f6;
+            border-left: 4px solid #10b981;
+        }
+        .kodaly .activity-header { 
+            background: #f3f4f6;
+            border-left: 4px solid #8b5cf6;
+        }
+        .rhythm .activity-header { 
+            background: #f3f4f6;
+            border-left: 4px solid #f59e0b;
+        }
+        
+        .description {
+            font-size: 0.85rem;
+            margin-bottom: 8px;
+            color: #000000;
+        }
+        
+        .song-type {
+            display: inline-block;
+            background: #f3f4f6;
+            color: #6b7280;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 0.7rem;
+            font-weight: 500;
+            margin-bottom: 8px;
+            border: 1px solid #e5e7eb;
+        }
+        
+        @page {
+            margin: 0.5in;
+            size: A4;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+            }
+            .content {
+                padding: 16px;
+            }
+            .activity-header {
+                flex-direction: column;
+                gap: 4px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <button class="print-button" onclick="window.print()">📄 Save as PDF</button>
+            <h1>Lower Kindergarten Music Lesson 1</h1>
+            <div class="duration">11 minutes</div>
+        </div>
+        
+        <div class="content">
+            <div class="goals">
+                <h3>🎯 Learning Goals</h3>
+                <div class="goals-list">
+                    <p>🎨 Responds imaginatively to music and dance</p>
+                    <p>🎵 Develops rhythmic awareness and musical expression</p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">Welcome</h2>
+                <div class="activity welcome">
+                    <div class="activity-header">
+                        <div class="activity-name">Hello Everyone</div>
+                        <div class="time-badge">3 min</div>
+                    </div>
+                    <div class="activity-content">
+                        <div class="song-lyrics">
+                            "Hello Everyone Hello Everyone Hello Everyone<br>
+                            It's time for music now!"
+                        </div>
+                        <div class="description">Opening welcome song with ukulele accompaniment.</div>
+                        <div class="resources">
+                            <a href="https://example.com/ukulele-chords" class="resource">🎸 Ukulele C,G,F</a>
+                            <a href="https://example.com/hello-video" class="resource">🎥 Video Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">Kodaly Songs</h2>
+                
+                <div class="activity kodaly">
+                    <div class="activity-header">
+                        <div class="activity-name">Cobbler Cobbler</div>
+                        <div class="time-badge">5 min</div>
+                    </div>
+                    <div class="activity-content">
+                        <div class="song-type">Sol/Mi Song & Game</div>
+                        <div class="song-lyrics">
+                            "Cobbler, cobbler, mend my shoe,<br>
+                            Get it done by half past two;<br>
+                            Stitch it up and stitch it down,<br>
+                            Then I'll give you half a crown."
+                        </div>
+                        <div class="instructions">
+                            <h4>Activities:</h4>
+                            <ul>
+                                <li>Children sit in circle, sing together</li>
+                                <li>Keep beat by tapping shoes with hands/sticks</li>
+                                <li>Hunt the Slipper: Customer in middle, others pass shoe secretly</li>
+                                <li>Customer gets 3 tries to guess who has the shoe</li>
+                            </ul>
+                        </div>
+                        <div class="resources">
+                            <a href="https://example.com/cobbler-audio" class="resource">🎵 Audio Track</a>
+                            <a href="https://example.com/rhythm-sticks" class="resource">🥁 Rhythm Guide</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="activity kodaly">
+                    <div class="activity-header">
+                        <div class="activity-name">Apple Tree</div>
+                        <div class="time-badge">3 min</div>
+                    </div>
+                    <div class="activity-content">
+                        <div class="song-type">Do Songs & Games</div>
+                        <div class="description">Musical exploration with movement and Do-based melodies.</div>
+                        <div class="resources">
+                            <a href="https://example.com/apple-tree-music" class="resource">🎵 Music Sheet</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">Rhythm Sticks</h2>
+                <div class="activity rhythm">
+                    <div class="activity-header">
+                        <div class="activity-name">The Clock Song</div>
+                        <div class="time-badge">3 min</div>
+                    </div>
+                    <div class="activity-content">
+                        <div class="song-lyrics">
+                            "What does the clock in the hall say? Tick, tock, tick tock<br>
+                            What does the clock on the wall say? Tick tock, Tick tock, Tick tock<br>
+                            What do little watches all say? Ti-ka ti-ka ti-ka ti-ka ti-ka tock<br>
+                            And the grand Father clock goes boing (4)"<br>
+                            <strong>Repeat x1</strong>
+                        </div>
+                        <div class="description">Rhythmic exploration song teaching different tempo patterns through clock sounds.</div>
+                        <div class="resources">
+                            <a href="https://example.com/clock-song-video" class="resource">🎥 Video Tutorial</a>
+                            <a href="https://example.com/percussion-guide" class="resource">🥁 Percussion Kit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
