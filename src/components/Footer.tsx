@@ -13,7 +13,7 @@ export function Footer() {
               href="mailto:info@rhythmstix.co.uk" 
               className="text-gray-300 hover:text-blue-300 transition-colors duration-200"
             >
-              📧 Contact Us
+              ✉️ Contact Us
             </a>
           </div>
 
