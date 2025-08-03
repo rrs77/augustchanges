@@ -1,4 +1,5 @@
 import React from 'react';
+import { Youtube, Linkedin, Facebook } from 'lucide-react';
 
 export function Footer() {
   return (
@@ -34,7 +35,7 @@ export function Footer() {
               rel="noopener noreferrer"
               aria-label="YouTube"
             >
-              <i className="fab fa-youtube text-base"></i>
+              <Youtube className="h-4 w-4" />
             </a>
             <a 
               href="https://www.linkedin.com/in/robert-reich-storer-974449144"
@@ -43,7 +44,7 @@ export function Footer() {
               rel="noopener noreferrer"
               aria-label="LinkedIn"
             >
-              <i className="fab fa-linkedin text-base"></i>
+              <Linkedin className="h-4 w-4" />
             </a>
             <a 
               href="https://www.facebook.com/Rhythmstix-Music-108327688309431"
@@ -52,7 +53,7 @@ export function Footer() {
               rel="noopener noreferrer"
               aria-label="Facebook"
             >
-              <i className="fab fa-facebook text-base"></i>
+              <Facebook className="h-4 w-4" />
             </a>
           </div>
 
