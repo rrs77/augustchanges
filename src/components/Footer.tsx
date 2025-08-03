@@ -9,22 +9,24 @@ export function Footer() {
           {/* Left side - Contact */}
           <div className="flex items-center space-x-4 text-sm">
             <a 
-              href="tel:01245633231" 
-              className="text-gray-300 hover:text-blue-300 transition-colors duration-200"
-            >
-              01245 633 231
-            </a>
-            <span className="text-gray-500">•</span>
-            <a 
               href="mailto:info@rhythmstix.co.uk" 
               className="text-gray-300 hover:text-blue-300 transition-colors duration-200"
             >
               info@rhythmstix.co.uk
             </a>
+            <span className="text-gray-500">•</span>
+            <a 
+              href="https://www.rhythmstix.co.uk"
+              className="text-gray-300 hover:text-blue-300 transition-colors duration-200"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              www.rhythmstix.co.uk
+            </a>
           </div>
 
           {/* Center - Social Media */}
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-3">
             <a 
               href="https://www.youtube.com/channel/UCooHhU7FKALUQ4CtqjDFMsw"
               className="text-gray-300 hover:text-red-400 transition-colors duration-200"
@@ -32,7 +34,7 @@ export function Footer() {
               rel="noopener noreferrer"
               aria-label="YouTube"
             >
-              <i className="fab fa-youtube text-xl"></i>
+              <i className="fab fa-youtube text-base"></i>
             </a>
             <a 
               href="https://www.linkedin.com/in/robert-reich-storer-974449144"
@@ -41,7 +43,7 @@ export function Footer() {
               rel="noopener noreferrer"
               aria-label="LinkedIn"
             >
-              <i className="fab fa-linkedin text-xl"></i>
+              <i className="fab fa-linkedin text-base"></i>
             </a>
             <a 
               href="https://www.facebook.com/Rhythmstix-Music-108327688309431"
@@ -50,7 +52,7 @@ export function Footer() {
               rel="noopener noreferrer"
               aria-label="Facebook"
             >
-              <i className="fab fa-facebook text-xl"></i>
+              <i className="fab fa-facebook text-base"></i>
             </a>
           </div>
 
