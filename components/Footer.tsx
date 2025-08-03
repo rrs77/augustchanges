@@ -1,61 +1,129 @@
 import React from 'react';
-import { Music, Globe } from 'lucide-react';
 
 export function Footer() {
   return (
-    <footer className="bg-blue-900 text-white py-3 mt-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row items-center justify-between space-y-1 md:space-y-0">
-          {/* Left side - Curriculum Designer branding */}
-          <div className="flex items-center space-x-3">
-            <div className="flex-shrink-0">
-              <img
-                src="/RLOGO copy copy.png"
-                alt="Curriculum Designer"
-                className="h-6 w-6 object-cover rounded"
-                onError={(e) => {
-                  // Fallback to Music icon if image fails to load
-                  const target = e.target as HTMLImageElement;
-                  target.style.display = 'none';
-                  target.nextElementSibling?.classList.remove('hidden');
-                }}
-              />
-              <div className="bg-gradient-to-br from-blue-500 to-blue-600 p-1 rounded hidden">
-                <Music className="h-4 w-4 text-white" />
-              </div>
-            </div>
+    <footer className="w-full bg-[#6a6f64] text-white/70 py-4 mt-16" style={{ fontFamily: 'OpenSansLight, sans-serif', fontSize: '14px' }}>
+      <div className="max-w-4xl mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Contact Us Section */}
+          <div>
+            <h6 className="text-xl mb-5 text-white font-normal" style={{ fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif' }}>
+              Contact Us
+            </h6>
             <div>
-              <h3 className="text-sm font-bold">Curriculum Designer</h3>
-              <p className="text-xs text-gray-300">For Education</p>
+              <a 
+                href="tel:01245633231" 
+                className="text-white/70 no-underline hover:text-white transition-colors"
+              >
+                01245 633 231
+              </a>
+              <br />
+              <a 
+                href="mailto:info@rhythmstix.co.uk" 
+                className="text-white/70 no-underline hover:text-white transition-colors"
+              >
+                info@rhythmstix.co.uk
+              </a>
+              
+              {/* SEO Text - Hidden */}
+              <p className="text-transparent text-xs my-1">
+                Rhythmstix: Songs and Teaching Resources
+                Buy Interactive Lesson Guides, Musicals, Nativities, MusicTech Resources and Curriculum Resources for EYFS, KS1, KS2 AND KS3.
+              </p>
+              
+              <div className="mt-2">
+                Rhythmstix Ltd, 33 Vicarage Road, Chelmsford, Essex CM2 9BP
+              </div>
+              
+              {/* SEO Text - Hidden */}
+              <p className="text-transparent text-xs my-1">
+                Rhythmstix: Songs and Teaching Resources
+                Buy Interactive Lesson Guides, Musicals, Nativities, MusicTech Resources and Curriculum Resources for EYFS, KS1, KS2 AND KS3.
+              </p>
             </div>
           </div>
 
-          {/* Center - Links section */}
-          <div className="flex items-center space-x-4 text-xs">
-            <a 
-              href="https://www.gov.uk/early-years-foundation-stage" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="flex items-center space-x-1 text-gray-300 hover:text-blue-300 transition-colors duration-200"
-            >
-              <Globe className="h-3 w-3" />
-              <span>Curriculum Framework</span>
-            </a>
-            
-            <span className="text-gray-500">•</span>
-            
-            <a 
-              href="mailto:contact@curriculumdesigner.com"
-              className="text-gray-300 hover:text-blue-300 transition-colors duration-200"
-            >
-              Contact
-            </a>
-            
-            <span className="text-gray-500">•</span>
-            
-            <span className="text-gray-300">© 2025 Curriculum Designer</span>
+          {/* Follow Us Section */}
+          <div>
+            <h6 className="text-xl mb-5 text-white font-normal" style={{ fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif' }}>
+              Follow Us
+            </h6>
+            <div className="relative flex items-center justify-around min-h-[110px] w-[114%] -left-[7%] border-l-4 border-r-4 border-white md:border-l-4 md:border-r-4 md:w-[114%] md:-left-[7%] max-md:border-l-0 max-md:border-r-0 max-md:w-full max-md:left-0">
+              <a 
+                href="https://www.youtube.com/channel/UCooHhU7FKALUQ4CtqjDFMsw"
+                className="text-white/70 hover:text-white transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fab fa-youtube text-5xl"></i>
+              </a>
+              <a 
+                href="https://www.linkedin.com/in/robert-reich-storer-974449144"
+                className="text-white/70 hover:text-white transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fab fa-linkedin text-5xl"></i>
+              </a>
+              <a 
+                href="https://www.facebook.com/Rhythmstix-Music-108327688309431"
+                className="text-white/70 hover:text-white transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fab fa-facebook text-5xl"></i>
+              </a>
+            </div>
+          </div>
+
+          {/* Useful Links Section */}
+          <div>
+            <h6 className="text-xl mb-5 text-white font-normal" style={{ fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif' }}>
+              Useful Links
+            </h6>
+            <div className="w-full flex items-center">
+              <div className="w-1/2">
+                <a 
+                  href="https://www.rhythmstix.co.uk/policy"
+                  className="block text-white/70 no-underline hover:text-white transition-colors mb-1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  App Privacy Notice
+                </a>
+                <a 
+                  href="https://www.rhythmstix.co.uk/cookies/"
+                  className="block text-white/70 no-underline hover:text-white transition-colors mb-1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Cookies
+                </a>
+                <a 
+                  href="https://www.rhythmstix.co.uk/app/#content"
+                  className="block text-white/70 no-underline hover:text-white transition-colors mb-1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Software Downloads
+                </a>
+                <a 
+                  href="https://www.rhythmstix.co.uk/about/#content"
+                  className="block text-white/70 no-underline hover:text-white transition-colors mb-1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  About Us
+                </a>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
+      
+      {/* Copyright Section */}
+      <div className="text-center mt-4 pt-4 border-t border-white/10">
+        &copy; Rhythmstix 2025
       </div>
     </footer>
   );
