@@ -30,30 +30,30 @@ export function Footer() {
           <div className="flex items-center space-x-3">
             <a 
               href="https://www.youtube.com/channel/UCooHhU7FKALUQ4CtqjDFMsw"
-              className="text-gray-300 hover:text-red-400 transition-colors duration-200"
+              className="text-white hover:text-red-400 transition-colors duration-200 p-1 rounded hover:bg-blue-800"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="YouTube"
             >
-              <Youtube className="h-4 w-4" />
+              <Youtube className="h-5 w-5" />
             </a>
             <a 
               href="https://www.linkedin.com/in/robert-reich-storer-974449144"
-              className="text-gray-300 hover:text-blue-400 transition-colors duration-200"
+              className="text-white hover:text-blue-300 transition-colors duration-200 p-1 rounded hover:bg-blue-800"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
             >
-              <Linkedin className="h-4 w-4" />
+              <Linkedin className="h-5 w-5" />
             </a>
             <a 
               href="https://www.facebook.com/Rhythmstix-Music-108327688309431"
-              className="text-gray-300 hover:text-blue-400 transition-colors duration-200"
+              className="text-white hover:text-blue-300 transition-colors duration-200 p-1 rounded hover:bg-blue-800"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
             >
-              <Facebook className="h-4 w-4" />
+              <Facebook className="h-5 w-5" />
             </a>
           </div>
 
