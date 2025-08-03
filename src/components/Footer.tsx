@@ -7,13 +7,13 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between space-y-2 md:space-y-0">
           
-          {/* Left side - Contact */}
+          {/* Left side - Contact & Website */}
           <div className="flex items-center space-x-4 text-sm">
             <a 
               href="mailto:info@rhythmstix.co.uk" 
               className="text-gray-300 hover:text-blue-300 transition-colors duration-200"
             >
-              info@rhythmstix.co.uk
+              Contact
             </a>
             <span className="text-gray-500">•</span>
             <a 
@@ -22,42 +22,42 @@ export function Footer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              www.rhythmstix.co.uk
+              Website
             </a>
           </div>
 
           {/* Center - Social Media */}
-          <div className="flex items-center space-x-3">
+          <div className="flex items-center space-x-4">
             <a 
               href="https://www.youtube.com/channel/UCooHhU7FKALUQ4CtqjDFMsw"
-              className="text-white hover:text-red-400 transition-colors duration-200 p-1 rounded hover:bg-blue-800"
+              className="text-white hover:text-red-400 transition-colors duration-200 p-2 rounded-md hover:bg-blue-800"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="YouTube"
             >
-              <Youtube className="h-5 w-5" />
+              <Youtube className="h-6 w-6" />
             </a>
             <a 
               href="https://www.linkedin.com/in/robert-reich-storer-974449144"
-              className="text-white hover:text-blue-300 transition-colors duration-200 p-1 rounded hover:bg-blue-800"
+              className="text-white hover:text-blue-300 transition-colors duration-200 p-2 rounded-md hover:bg-blue-800"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
             >
-              <Linkedin className="h-5 w-5" />
+              <Linkedin className="h-6 w-6" />
             </a>
             <a 
               href="https://www.facebook.com/Rhythmstix-Music-108327688309431"
-              className="text-white hover:text-blue-300 transition-colors duration-200 p-1 rounded hover:bg-blue-800"
+              className="text-white hover:text-blue-300 transition-colors duration-200 p-2 rounded-md hover:bg-blue-800"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
             >
-              <Facebook className="h-5 w-5" />
+              <Facebook className="h-6 w-6" />
             </a>
           </div>
 
-          {/* Right side - Copyright and Links */}
+          {/* Right side - Copyright and Privacy */}
           <div className="flex items-center space-x-4 text-sm">
             <a 
               href="https://www.rhythmstix.co.uk/policy"
