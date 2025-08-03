@@ -7,22 +7,13 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between space-y-2 md:space-y-0">
           
-          {/* Left side - Contact & Website */}
+          {/* Left side - Contact */}
           <div className="flex items-center space-x-4 text-sm">
             <a 
               href="mailto:info@rhythmstix.co.uk" 
               className="text-gray-300 hover:text-blue-300 transition-colors duration-200"
             >
               Contact
-            </a>
-            <span className="text-gray-500">•</span>
-            <a 
-              href="https://www.rhythmstix.co.uk"
-              className="text-gray-300 hover:text-blue-300 transition-colors duration-200"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Website
             </a>
           </div>
 
@@ -68,7 +59,14 @@ export function Footer() {
               Privacy
             </a>
             <span className="text-gray-500">•</span>
-            <span className="text-gray-300">© 2025 Rhythmstix</span>
+            <a 
+              href="https://www.rhythmstix.co.uk"
+              className="text-gray-300 hover:text-blue-300 transition-colors duration-200"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              © 2025 Rhythmstix
+            </a>
           </div>
           
         </div>
