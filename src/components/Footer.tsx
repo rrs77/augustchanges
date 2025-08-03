@@ -13,15 +13,15 @@ export function Footer() {
               href="mailto:info@rhythmstix.co.uk" 
               className="text-gray-300 hover:text-blue-300 transition-colors duration-200"
             >
-              Contact
+              📧 Contact Us
             </a>
           </div>
 
           {/* Center - Social Media */}
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-6">
             <a 
               href="https://www.youtube.com/channel/UCooHhU7FKALUQ4CtqjDFMsw"
-              className="text-white hover:text-red-400 transition-colors duration-200 p-2 rounded-md hover:bg-blue-800"
+              className="text-white hover:text-red-400 transition-colors duration-200 p-3 rounded-md hover:bg-blue-800"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="YouTube"
@@ -30,7 +30,7 @@ export function Footer() {
             </a>
             <a 
               href="https://www.linkedin.com/in/robert-reich-storer-974449144"
-              className="text-white hover:text-blue-300 transition-colors duration-200 p-2 rounded-md hover:bg-blue-800"
+              className="text-white hover:text-blue-300 transition-colors duration-200 p-3 rounded-md hover:bg-blue-800"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
@@ -39,7 +39,7 @@ export function Footer() {
             </a>
             <a 
               href="https://www.facebook.com/Rhythmstix-Music-108327688309431"
-              className="text-white hover:text-blue-300 transition-colors duration-200 p-2 rounded-md hover:bg-blue-800"
+              className="text-white hover:text-blue-300 transition-colors duration-200 p-3 rounded-md hover:bg-blue-800"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
